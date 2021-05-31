@@ -1,2 +1,2 @@
-# short-exercises-c-
+# Short-exercises-cplus
 Compilation of short exercises in c++
