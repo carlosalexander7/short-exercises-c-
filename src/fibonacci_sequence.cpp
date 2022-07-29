@@ -10,11 +10,11 @@ using namespace std;
 /** Return the next fibonacci number considering:
  * next_num = (current_num -1) + (current_num -2)
  */
-int fibonacci_seq(int const &number)
+int get_fibonacci_seq(int const &number)
 {
     if (number > 1)
     {
-        return fibonacci_seq(number - 1) + fibonacci_seq(number - 2);
+        return get_fibonacci_seq(number - 1) + get_fibonacci_seq(number - 2);
     }
     else
     {
@@ -29,7 +29,7 @@ int main()
     cin >> amount;
     for (int i = 0; i < amount; i++)
     {
-        cout << fibonacci_seq(i) << ' ';
+        cout << get_fibonacci_seq(i) << ' ';
     }
     cout << endl;
     return 0;
